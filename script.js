@@ -65,3 +65,50 @@ let calcular3 = function(){
    9 x ${entrada} = ${nove},<br>
    10 x ${entrada} = ${dez}.<br>`
 }
+
+//ex6//
+let calcular4 = function(){
+  let entrada1 = document.getElementById("v1").value
+  let entrada2 = document.getElementById("v2").value
+  let entrada3 = document.getElementById("v3").value
+  let entrada4 = document.getElementById("vNegat").value
+  let v1 = parseInt(entrada1)
+  let v2 = parseInt(entrada2)
+  let v3 = parseInt(entrada3)
+  let vNegat = parseInt(entrada4)
+
+  if((vNegat < 0)&&(v1 > 0)&&(v2 > 0)&&(v3 > 0)){
+    let maior = Math.max(v1, v2, v3)
+    document.getElementById("saida4").innerHTML = "O maior valor é: " + maior
+  }else{
+    document.getElementById("saida4").innerHTML = "Insira valores positivos e negativos corretamente!"
+  }
+}
+
+//ex7//
+let calcular5 = function(){
+  let array = [1,2,3,4,5,6,7,8,9,10]
+  let impares = []
+  let saida = document.getElementById("saida5");
+
+  for (let i = 0; i < array.length; i++){
+    if(array[i] % 2 !== 0){
+      impares.push(array[i])
+    }
+  } 
+
+  saida.innerHTML = `${impares}`
+}
+
+//ex8//
+let calcular6 = function(){
+  let saida = document.getElementById("saida6");
+  let nome = document.getElementById("entradaNome").value;
+  let nomeInvertido = nome.split([]).reverse().join("")
+  saida.innerHTML=nomeInvertido
+}
+
+//ex9//
+
+
+//ex10//
